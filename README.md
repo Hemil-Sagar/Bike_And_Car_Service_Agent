@@ -1,4 +1,4 @@
-## Vikas Voice Service Agents
+## Voice Service Agents
 
 This repository contains voice-based service agents and a simple Dockerized demo app:
 
@@ -29,8 +29,8 @@ TWILIO_AUTH_TOKEN=your_twilio_auth_token
 VALIDATE_REQUESTS=false
 
 # MongoDB credentials (used in mongofetch.py; defaults shown)
-MONGO_USER=vikas
-MONGO_PASSWORD=change_me
+MONGO_USER=Your_User
+MONGO_PASSWORD=Your_Password
 
 # Google service account for TTS (can also export in shell)
 GOOGLE_APPLICATION_CREDENTIALS=/absolute/path/to/service-account-key.json
@@ -92,8 +92,8 @@ This is a separate demo not tied to Twilio:
 
 ```
 cd Docker
-docker build -t vikas-demo .
-docker run -p 8000:8000 vikas-demo
+docker build -t demo .
+docker run -p 8000:8000 demo
 ```
 
 Visit `http://localhost:8000` for the multiplication table page.
